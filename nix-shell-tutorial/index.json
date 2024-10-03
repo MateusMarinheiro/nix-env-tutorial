@@ -2,13 +2,13 @@
   "title": "Nix Shell Tutorial",
   "details": {
     "intro": {
-      "text": "intro.md",
-      "background": "step1/background.sh"
+      "text": "intro.md"
     },
     "steps": [
       {
         "title": "Add nix-env and set it up",
-        "text": "step1/text.md"
+        "text": "step1/text.md",
+        "background": "step1/background.sh"
       },
       {
         "title": "Create a flake file",
