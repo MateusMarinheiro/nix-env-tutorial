@@ -31,5 +31,5 @@ nix-env -iA nixpkgs.cowsay
 
 Then we can test the package with this. 
 ``` 
-cowsay "$SECRET"
+cowsay "Hmm, <!-- Have you heard about Spoon? -->"
 ```{{exec}} 
