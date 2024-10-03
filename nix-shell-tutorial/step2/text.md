@@ -23,20 +23,22 @@ The <strong>description</strong> section is self explanatory. Here you can give 
 <details>
 <summary>Inputs</summary>
 The <strong>inputs</strong> section is a bit more complex but not to worry. In this section you can specify dependencies that your flake needs in order to be built. These dependencies can come from multiple sources such as:
-  - Github
-  - Generic git repositories
-  - Your file system
-
+<ul>
+  <li>Github</li>
+  <li>Generic git repositories</li>
+  <li>Your file system</li>
+</ul>
 One of the most common dependencies in a nix flake is the default one, the nixpkgs. This includes all the packages in the package repository of NixOS (+100 000 packages).
 </details>
 
 <details>
 <summary>Outputs</summary>
 Finally the <strong>outputs</strong> section is the one we are more concerned with. This allows us to state what the flake while produce once it is built. We can have multiple <strong>outputs</strong> at the same time such as:
-  - Nix packages
-  - Nix development environments (this is what we are interested in)
-  - NixOS configurations
-  - Nix templates
-
+<ul>
+  <li>Nix packages</li>
+  <li>Nix development environments (this is what we are interested in)</li>
+  <li>NixOS configurations</li>
+  <li>Nix templates</li>
+</ul>
 The **outputs** are defined as a function that takes each input from the inputs sections as the arguments.
 </details>
