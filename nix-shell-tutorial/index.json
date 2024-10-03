@@ -27,7 +27,8 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu",
+    "scripts": ["startup.sh"]
     
   }
 }
