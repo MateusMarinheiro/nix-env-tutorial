@@ -27,9 +27,7 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu",
-    "environment": {
-      "SECRET": "Have you heard about Spoon?"
-    }
+    "imageid": "ubuntu"
+    
   }
 }
