@@ -7,23 +7,19 @@
     "steps": [
       {
         "title": "Add nix-env and set it up",
-        "text": "step1/text.md",
-        "verify": "step1/verify.sh"
+        "text": "step1/text.md"
       },
       {
         "title": "Create a flake file",
-        "text": "step2/text.md",
-        "verify": "step2/verify.sh"
+        "text": "step2/text.md"
       },
       {
         "title": "Add packages to the flake file",
-        "text": "step3/text.md",
-        "verify": "step3/verify.sh"
+        "text": "step3/text.md"
       },
       {
         "title": "Change packages to desired version",
-        "text": "step4/text.md",
-        "verify": "step4/verify.sh"
+        "text": "step4/text.md"
       }
     ],
     "finish": {
