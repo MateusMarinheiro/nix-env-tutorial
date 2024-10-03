@@ -2,7 +2,8 @@
   "title": "Nix Shell Tutorial",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "step1/background.sh"
     },
     "steps": [
       {
@@ -27,8 +28,7 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu",
-    "scripts": ["startup.sh"]
-    
+    "imageid": "ubuntu"
+  
   }
 }
