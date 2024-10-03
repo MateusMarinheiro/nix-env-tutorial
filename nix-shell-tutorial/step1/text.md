@@ -31,5 +31,6 @@ nix-env -iA nixpkgs.cowsay
 
 Then we can test the package with this. 
 ``` 
-cowsay "Hmm, <!-- Have you heard about Spoon? -->"
+cowsay "NDggNjEgNzYgNjUgMjAgNzkgNmYgNzUgMjAgNjggNjUgNjEgNzIgNjQgMjAgNjEgNjIgNmYgNzUgNzQgMjAgNTMgNTAgNGYgNGYgNGUgM2Y=
+"
 ```{{exec}} 
