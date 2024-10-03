@@ -6,4 +6,6 @@ After that you will setup a *nix flake* and change a few of it's packages in ord
 Finally, you will look at a more advance *nix flake* with more advanced features so you can get a better idea of what the possibilities of Nix Package Manager are.
 
 To start, move into your home folder:
-```cd ~```{{exec}}
+```
+cd ~
+```{{exec}}
