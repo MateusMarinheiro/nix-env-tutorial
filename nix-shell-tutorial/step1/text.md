@@ -3,7 +3,7 @@ The first step is to install Nix Package Manager. By running the following comma
 ```
 $ sh <(curl -L https://nixos.org/nix/install) --daemon
 ```{{exec}}
-Once everything is installed, the next step is to add and configure the Nix configuration file.
+Once everything is installed, the next step is to add and configure the Nix configuration file. Before we do this, we need to restart the shell. To do so we need to push ctrl + d and then enter.
 
 ```
 mkdir -p /home/ubuntu/.config/nix
@@ -11,11 +11,11 @@ mkdir -p /home/ubuntu/.config/nix
 To create or edit this file you can use nano or vim.
 For nano:
 ```
-nano ~/.config/nix/nix.conf
+nano /home/ubuntu/.config/nix/nix.conf
 ```{{exec}}
 For vim:
 ```
-vim ~/.config/nix/nix.conf
+vim /home/ubuntu/.config/nix/nix.conf
 ```{{exec}}
 
 In this file we will add the following line. 
@@ -25,9 +25,10 @@ experimental-features = nix-command flakes
 
 Now we can install a package with nix-env. To do so we type this: 
 ```
-nix-env install 'nixpkgs#cowsay'
+nix-env -iA nixpkgs.cowsay'
 ```{{exec}}
 
 Then we can test the package with this. 
-``` cowsay "Have you heard about Spoon?"
+``` 
+cowsay "Have you heard about Spoon?"
 ```{{exec}} 
