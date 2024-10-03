@@ -7,7 +7,3 @@ Finally, you will look at a more advance *nix flake* with more advanced features
 
 To start, move into your home folder:
 ```cd ~```{{exec}}
-```
-```
-```
-```
