@@ -17,12 +17,12 @@ You can see the that the flake consists of 3 sections. The **description**, the 
 
 <details>
 <summary>Description</summary>
-The **description** section is self explanatory. Here you can give a brief commentary on your flake. Customise it to your liking if you want it shouldn't affect the rest of the tutorial.
+The <b>description</b> section is self explanatory. Here you can give a brief commentary on your flake. Customise it to your liking if you want it shouldn't affect the rest of the tutorial.
 </details>
 
 <details>
 <summary>Inputs</summary>
-The **inputs** section is a bit more complex but not to worry. In this section you can specify dependencies that your flake needs in order to be built. These dependencies can come from multiple sources such as:
+The <b>inputs</b> section is a bit more complex but not to worry. In this section you can specify dependencies that your flake needs in order to be built. These dependencies can come from multiple sources such as:
   - Github
   - Generic git repositories
   - Your file system
@@ -32,7 +32,7 @@ One of the most common dependencies in a nix flake is the default one, the nixpk
 
 <details>
 <summary>Outputs</summary>
-Finally the **outputs** section is the one we are more concerned with. This allows us to state what the flake while produce once it is built. We can have multiple **outputs** at the same time such as:
+Finally the <b>outputs</b> section is the one we are more concerned with. This allows us to state what the flake while produce once it is built. We can have multiple <b>outputs</b> at the same time such as:
   - Nix packages
   - Nix development environments (this is what we are interested in)
   - NixOS configurations
