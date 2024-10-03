@@ -7,7 +7,8 @@
     "steps": [
       {
         "title": "Add nix-env and set it up",
-        "text": "step1/text.md"
+        "text": "step1/text.md",
+        "background": "step1/background.sh"
       },
       {
         "title": "Create a flake file",
@@ -27,8 +28,7 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu",
-    "scripts": ["startup.sh"]
-    
+    "imageid": "ubuntu"
+  
   }
 }
