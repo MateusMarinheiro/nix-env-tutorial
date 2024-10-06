@@ -3,6 +3,7 @@ Our goal is to create a developer shell that will allows us to have multiple env
 In order to do this, first start by removing everything inside the **outputs** section. Then, add the following lines to it.
 
 ```
+outputs = {self, nixpkgs} :
 let pkgs = nixpkgs.legacyPackages.x86_64-linux;
 in
 {
@@ -29,3 +30,5 @@ buildInputs = [
   pkgs.nodejs_22
 ];
 ```
+
+Try to use this packages for example by using `ponysay "Hello"`{{exec}} or `node --version`{{exec}}
