@@ -11,6 +11,10 @@ in
 };
 ```
 
+This is how the nix flake file should look like after you modified it:
+
+![First Nix Flake State](/nix-shell-tutorial/imgs/image.png)
+
 This is a way to create the variable *pkgs* so that we don't need to repeat the *nixpkgs.legacyPackages.x86_64-linux* string everytime.
 
 Inside the `in {...};` section is where we will define what the flake will return. In our case we want to create a simple *devShell* so let's do that by adding the following lines.
