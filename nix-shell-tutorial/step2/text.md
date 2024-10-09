@@ -40,5 +40,5 @@ Finally the <strong>outputs</strong> section is the one we are more concerned wi
   <li>NixOS configurations</li>
   <li>Nix templates</li>
 </ul>
-The **outputs** are defined as a function that takes each input from the inputs sections as the arguments.
+The <strong>outputs</strong> are defined as a function that takes each input from the inputs sections as the arguments.
 </details>
