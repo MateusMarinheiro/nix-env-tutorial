@@ -13,7 +13,7 @@ in
 
 This is how the nix flake file should look like after you modified it:
 
-![First Nix Flake State](/nix-shell-tutorial/imgs/image.png)
+![First Nix Flake State](../imgs/image1.png)
 
 This is a way to create the variable *pkgs* so that we don't need to repeat the *nixpkgs.legacyPackages.x86_64-linux* string everytime.
 
@@ -31,8 +31,14 @@ This will create a shell for a Linux x86_64. You can add packages by declaring t
 ```
 buildInputs = [
   pkgs.ponysay
-  pkgs.nodejs_22
+  pkgs.nodejs_20
 ];
 ```
 
+This is how your nix flake file should look like by now:
+
+![Second Nix Flake State](../imgs/image2.png)
+
 Try to use this packages for example by using `ponysay "Hello"`{{exec}} or `node --version`{{exec}}
+
+![Pony Say result](../imgs/ponysay_result.png)
