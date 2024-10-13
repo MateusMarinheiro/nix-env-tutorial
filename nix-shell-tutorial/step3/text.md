@@ -44,3 +44,5 @@ In order to start your new shell, you need to run the command `nix develop`. Whe
 For now, you can try to use the newly installed packages by using for example `ponysay "Hello"`{{exec}} or `node --version`{{exec}}. Also note that the previously installed packages are still present, try to run `cowsay "Hello"`{{exec}}.
 
 ![Pony Say result](../imgs/ponysay_result.png)
+
+You can exit the shell by typing `exit` or using `Ctrl + D`.
