@@ -39,6 +39,8 @@ This is how your nix flake file should look like by now:
 
 ![Second Nix Flake State](../imgs/image2.png)
 
-Try to use this packages for example by using `ponysay "Hello"`{{exec}} or `node --version`{{exec}}
+In order to start your new shell, you need to run the command `nix develop`. When we run this command a `flake.lock` file will be created which we will explain further in the tutorial.
+
+For now, you can try to use the newly installed packages by using for example `ponysay "Hello"`{{exec}} or `node --version`{{exec}}. Also note that the previously installed packages are still present, try to run `cowsay "Hello"`{{exec}}.
 
 ![Pony Say result](../imgs/ponysay_result.png)
