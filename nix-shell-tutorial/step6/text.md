@@ -20,7 +20,7 @@ We first start by removing everything inside the **outputs** section, and then a
 
 ```
  
-Finally we need to define which packages we want to include in the development shell. This is done inside the `in {...};` section. Like the previous step, this example will install *ponysay*,  *nodejs* together with *lolcat* across all systems, by adding them to the *buildInputs* of the *devShell*. 
+Finally we need to define which packages we want to include in the development shell. This is done inside the `in {...};` section. Like the previous step, this example will install *ponysay* and *nodejs* across all systems, by adding them to the *buildInputs* of the *devShell*. 
  ```
 in {
       devShell = forAllSystems (system:
@@ -29,7 +29,7 @@ in {
         in pkgs.mkShell {
           buildInputs = [
             pkgs.ponysay
-            pkgs.nodejs
+            pkgs.nodejs_20
           ];
         }
       );
