@@ -20,17 +20,21 @@ We first start by removing everything inside the **outputs** section, and then a
 
 ```
  
-Finally we need to define which packages we want to install. This is done inside the `in {...};` section. In this example we will install ponysay and nodejs_20 across all systems. 
+Finally we need to define which packages we want to include in the development shell. This is done inside the `in {...};` section. In this example we will install ponysay and nodejs_20 across all systems, by adding them to the *buildInputs* of the *devShell*. 
  ```
-    in {
-      packages = forAllSystems (system:
+in {
+      devShell = forAllSystems (system:
         let
           pkgs = nixpkgsFor.${system};
-        in {
-          package_1 = pkgs.ponysay;
-          package_2 = pkgs.nodejs_20;
-        });
+        in pkgs.mkShell {
+          buildInputs = [
+            pkgs.ponysay
+            pkgs.nodejs_20
+          ];
+        }
+      );
     };
+
 
 
 ```
@@ -39,17 +43,27 @@ Finally we need to define which packages we want to install. This is done inside
 {
   outputs = { self, nixpkgs }:
     let 
+      # Define supported systems
       supportedSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
+
+      # Generate attributes for each system
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
+
+      # Map each system to the corresponding nixpkgs package set
       nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; });
     in {
-      packages = forAllSystems (system:
+      # Define devShell for all supported systems
+      devShell = forAllSystems (system:
         let
           pkgs = nixpkgsFor.${system};
-        in {
-          package_1 = pkgs.ponysay;
-          package_2 = pkgs.nodejs_20;
-        });
+        in pkgs.mkShell {
+          # Specify packages to include in the development shell
+          buildInputs = [
+            pkgs.ponysay
+            pkgs.nodejs_20
+          ];
+        }
+      );
     };
 }
 
