@@ -21,6 +21,14 @@
       {
         "title": "Change packages to desired version",
         "text": "step4/text.md"
+      },
+      {
+        "title": "Locking your versioning",
+        "text": "step5/text.md"
+      },
+      {
+        "title": "Adapting to your system",
+        "text": "step6/text.md"
       }
     ],
     "finish": {
