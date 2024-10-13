@@ -36,7 +36,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "*/*", "target": "~/locked-flake", "chmod": "+x"}
+        {"file": "locked-flake/*", "target": "~/locked-flake", "chmod": "+x"}
       ]
     }
   },
