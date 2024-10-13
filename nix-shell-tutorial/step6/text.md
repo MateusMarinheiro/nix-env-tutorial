@@ -20,7 +20,20 @@ We first start by removing everything inside the **outputs** section, and then a
 
 ```
  
-  Finally we need to define which packages we want to install. 
+Finally we need to define which packages we want to install. This is done inside the `in {...};` section. In this example we will install ponysay and nodejs_20 across all systems. 
+ ```
+    in {
+      packages = forAllSystems (system:
+        let
+          pkgs = nixpkgsFor.${system};
+        in {
+          package_1 = pkgs.ponysay;
+          package_2 = pkgs.nodejs_20;
+        });
+    };
+
+
+```
 
 ```
 {
