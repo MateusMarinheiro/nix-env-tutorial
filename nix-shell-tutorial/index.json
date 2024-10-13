@@ -36,7 +36,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "conf.yaml", "target": "~/", "chmod": "+w"},
+        {"file": "conf.yaml", "target": "~/", "chmod": "+w"}
       ]
     }
   },
