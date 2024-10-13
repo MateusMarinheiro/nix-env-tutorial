@@ -33,6 +33,11 @@
     ],
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "conf.yaml", "target": "~/", "chmod": "+w"},
+      ]
     }
   },
   "backend": {
