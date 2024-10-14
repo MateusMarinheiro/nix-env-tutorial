@@ -9,7 +9,6 @@ To start using *flakes* we should create a folder where we store our files. This
 mkdir my-flake
 cd my-flake
 ```{{exec}}
-<!-- add {{exec}} -->
 
 Once inside the folder we can run the following command `nix flake init`{{exec}}. This will create a basic *flake.nix* file. Try to open it with your preferred text editor.
 
