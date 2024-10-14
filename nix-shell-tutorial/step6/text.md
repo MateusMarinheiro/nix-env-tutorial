@@ -22,16 +22,15 @@ We start by removing everything inside the **outputs** section, and then adding 
 Finally, we need to define which packages we want to include in the development shell. This is done inside the `in {...};` section. Like the previous step, this example will install *ponysay* and *nodejs* across all systems, by adding them to the *buildInputs* of the *devShell*. 
  ```
 in {
- devShell = forAllSystems (system:
- let
-  pkgs = nixpkgsFor.${system};
- in pkgs.mkShell
-    {
-  buildInputs = [
-    pkgs.ponysay
-    pkgs.nodejs_22
-            ];
-    }  
+    devShell = forAllSystems (system:
+      let
+        pkgs = nixpkgsFor.${system};
+      in pkgs.mkShell{
+        buildInputs = [
+          pkgs.ponysay
+          pkgs.nodejs_22
+        ];
+      }  
     );
   };
 ```
