@@ -5,4 +5,4 @@ Congratulations! You’ve successfully completed the tutorial and learned how to
 - Create and configure a Nix flake.
 - Add a devShell to a flake that defines and manages package versions, ensuring it works across all environments and architectures.
 
-![helpmeplz](../imgs/easter-egg-help.png)
+![Easter egg Help](./imgs/easteregg-help.png)

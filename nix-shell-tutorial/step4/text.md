@@ -18,6 +18,6 @@ buildInputs = [
 
 Try to use these packages for example by using `python --version`{{exec}} or `node --version`{{exec}}
 
-This is how it should look now:
+If you updated the versions, the output in the terminal should look like this:
 
 ![New Version, who dis result](../imgs/flake-updated-step4.png)

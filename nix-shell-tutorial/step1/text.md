@@ -51,5 +51,5 @@ cowsay "NDggNjEgNzYgNjUgMjAgNzkgNmYgNzUgMjAgNjggNjUgNjEgNzIgNjQgMjAgNjEgNjIgNmYg
 "
 ```{{exec}} 
 
-If everything worked, it should look something like this. 
+If everything worked, the output should look something like this. 
 ![Output State](../imgs/output-cow.png)
