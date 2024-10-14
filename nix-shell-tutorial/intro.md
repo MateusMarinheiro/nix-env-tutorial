@@ -1,3 +1,5 @@
+If you ever spent some time in a DevOps environment you know it is difficult to make sure that every one is using the same package versioning and that these versions match the ones being used in the CI/CD pipeline. Nix is a tool that takes a unique approach to package management and system configuration and therefore we think it is a good solution for this issue.
+
 In this tutorial you will learn how you can setup Nix Package Manager and how you can use it in order to manage your package versions.
 
 You will start with a basic Ubuntu Linux in which you will setup the Nix Package Manager. You will then learn how to install a package using the *nix-env* command.
