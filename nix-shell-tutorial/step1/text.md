@@ -26,10 +26,9 @@ In this file we will add the following line.
 experimental-features = nix-command flakes
 ```{{exec}}
 
-This configuration enables Nix's experimental features, which allow us to use advanced commands. Save the file and exit the editor. 
+With this configuration, we enable two experimental features: **nix-command** and **flakes**. This enables advanced functionalities in Nix, such as using the nix-env command, which allows us to manage user-specific packages.
 
-With this configuration we can install a package with **nix-env** command. This Nix command-line tool is used for managing user-specific packages.
-Let's try this and install a package called *cowsay* using the following command: 
+Let's try this by installing a package called *cowsay* using the following command: 
 ```
 nix-env -iA nixpkgs.cowsay
 ```{{exec}}
