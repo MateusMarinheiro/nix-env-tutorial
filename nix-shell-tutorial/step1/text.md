@@ -41,9 +41,9 @@ nix-env -iA nixpkgs.cowsay
 ```{{exec}}
 
 A brief explanation about this command. 
-- `**nix-env**`: The Nix command-line tool for managing user-specific packages.
-- `**-iA**`: This option tells Nix to install a package using an attribute from the Nixpkgs repository.
-- `**nixpkgs.cowsay**`: This specifies that we want to install the `cowsay` package from the Nixpkgs repository.
+- **`nix-env`**: The Nix command-line tool for managing user-specific packages.
+- **`-iA`**: This option tells Nix to install a package using an attribute from the Nixpkgs repository.
+- **`nixpkgs.cowsay`**: This specifies that we want to install the `cowsay` package from the Nixpkgs repository.
 
 Finally, let's test the installation with this command:
 ``` 
