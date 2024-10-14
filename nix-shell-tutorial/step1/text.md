@@ -33,7 +33,7 @@ In this file we will add the following line.
 experimental-features = nix-command flakes
 ```{{exec}}
 
-With this configuration, we enable two experimental features: **nix-command** and **flakes**. This enables advanced functionalities in Nix, such as using the nix-env command, which allows us to manage user-specific packages.
+With this configuration, enabling **nix-command** and **flakes** unlocks advanced features in Nix, offering more flexibility in managing user-specific packages
 
 Let's try this by installing a package called *cowsay* using the following command: 
 ```
@@ -50,3 +50,6 @@ Finally, let's test the installation with this command:
 cowsay "NDggNjEgNzYgNjUgMjAgNzkgNmYgNzUgMjAgNjggNjUgNjEgNzIgNjQgMjAgNjEgNjIgNmYgNzUgNzQgMjAgNTMgNTAgNGYgNGYgNGUgM2Y=
 "
 ```{{exec}} 
+
+If everything worked, it should look something like this. 
+![Output State](../imgs/output-cow.png)

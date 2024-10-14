@@ -12,8 +12,12 @@ Nix also makes it easy to switch to different versions of packages. For example,
 ```
 buildInputs = [
  pkgs.python310
- pkgs.nodejs_19
+ pkgs.nodejs_22
 ];
 ```
 
 Try to use these packages for example by using `python --version`{{exec}} or `node --version`{{exec}}
+
+This is how it should look now:
+
+![New Version, who dis result](../imgs/flake-updated-step4.png)
