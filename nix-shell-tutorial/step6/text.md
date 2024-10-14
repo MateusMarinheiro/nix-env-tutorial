@@ -17,7 +17,6 @@ We start by removing everything inside the **outputs** section, and then adding 
  
  ```
  nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; });
-
 ```
  
 Finally, we need to define which packages we want to include in the development shell. This is done inside the `in {...};` section. Like the previous step, this example will install *ponysay* and *nodejs* across all systems, by adding them to the *buildInputs* of the *devShell*. 
@@ -25,19 +24,21 @@ Finally, we need to define which packages we want to include in the development 
 in {
  devShell = forAllSystems (system:
  let
- pkgs = nixpkgsFor.${system};
- in pkgs.mkShell {
- buildInputs = [
- pkgs.ponysay
- pkgs.nodejs_22
- ];
- }
- );
- };
-
-
-
+  pkgs = nixpkgsFor.${system};
+ in pkgs.mkShell
+    {
+  buildInputs = [
+    pkgs.ponysay
+    pkgs.nodejs_22
+            ];
+    }  
+    );
+  };
 ```
 By now the file should look like this: 
 
 ![Multi Nix Flake State](../imgs/image3.png)
+
+Finally you can run the following command to load your development environment. `nix develop`{{exec}}.
+
+To check the installed packages, try using for example `ponysay "Hello"`{{exec}} or `node --version`{{exec}}.
